@@ -1,0 +1,140 @@
+body {
+  margin: 0 auto;
+  max-width: 1250px;
+}
+body a.arrow-button {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fc635e;
+  border: 1px solid #fc635e;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+body a.arrow-button:hover {
+  background: #fc635e;
+  color: white;
+}
+body a.main-button {
+  color: #fc635e;
+  text-decoration: none;
+  font-size: 22px;
+  border: 2px solid #fc635e;
+  padding: 12px 28px;
+  border-radius: 8px;
+}
+body a.main-button:hover {
+  background: #fc635e;
+  color: white;
+}
+body .main-text {
+  text-align: center;
+}
+body .main-text h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+}
+body .main-text h1 span {
+  color: #fc635e;
+}
+body .main-text p {
+  color: white;
+  font-size: 22px;
+}
+body h1.main-header {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+body h1.main-header span {
+  color: #fc635e;
+}
+body header {
+  background: url("../img/background.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  width: 100%;
+  max-width: 1250px;
+  justify-content: space-around;
+}
+body header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header nav > a {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+body header nav > a img {
+  padding-right: 15px;
+  vertical-align: middle;
+}
+body header nav .logo:hover img {
+  opacity: 0.7;
+}
+body header nav menu {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+}
+body header nav menu li {
+  padding-left: 15px;
+}
+body header nav menu li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+body header nav menu li a:hover {
+  color: #fc635e;
+  border-bottom: #fc635e solid 3px;
+  padding-bottom: 3px;
+}
+body .receive {
+  margin-top: 0;
+  text-align: center;
+  background: white;
+  padding: 70px 50px 10px 50px;
+  color: #868686;
+}
+body .receive p {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+body .receive-icons {
+  display: flex;
+}
+body .receive-icons h3 {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+body .receive-icons p {
+  font-size: 18px;
+}
+body .receive-icons div {
+  padding: 15px;
+}
+body .expand {
+  padding: 100px 100px 15px 100px;
+  background: url("../img/expand.png") no-repeat;
+  /*min-height: 450px;
+    max-width: 1250px;
+    width: 100%;*/
+}
+body .expand .main-text {
+  padding: 50px;
+  margin-bottom: 80px;
+  border: 15px solid rgba(0, 0, 0, 0.2);
+}
+body .expand .main-text h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}

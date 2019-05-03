@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) and (min-width: 550px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    body .expand {
+        padding: 30px 30px 10px 30px;
+    }
+    body .expand .main-text {
+        padding: 50px 0px;
+        margin-bottom: 20px;
+    }
+    body .expand .main-text h1 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    nav {
+        padding: 0px 20px;
+    }
+    menu {
+        display: flex;
+        flex-direction: column;
+    }
+    menu li {
+        margin-bottom: 10px;
+    }
+    body header .main-text h1 {
+        font-size: 40px;
+        margin-top: -20px;
+    }
+    body header .main-text p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    body .expand {
+        padding: 10px;
+    }
+    body .expand .main-text {
+        border: none;
+        padding: 30px 0px;
+        margin-bottom: 20px;
+    }
+    body .expand .main-text h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .receive {
+        padding: 30px 20px;
+    }
+    .receive h1 {
+        font-size: 26px;
+    }
+    .receive p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .receive-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .receive-icons div {
+        max-width: 350px;
+    }
+    .receive-icons div p {
+        margin-bottom: 20px;
+    }
+}
