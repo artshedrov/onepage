@@ -7,7 +7,7 @@
         padding: 30px 30px 10px 30px;
     }
     body .expand .main-text {
-        padding: 50px 0px;
+        padding: 50px 0;
         margin-bottom: 20px;
     }
     body .expand .main-text h1 {
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 549px) {
     nav {
-        padding: 0px 20px;
+        padding: 0 20px;
     }
     menu {
         display: flex;
@@ -47,6 +47,12 @@
         font-size: 25px;
         margin-bottom: 30px;
     }
+    body .process .steps {
+        display: block;
+    }
+    body .process .back-process {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1260px) {
@@ -68,6 +74,66 @@
         max-width: 350px;
     }
     .receive-icons div p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wedo1 {
+        padding: 5px;
+        text-align: center;
+    }
+    .wedo1 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wedo1 .container img {
+        width: 100%;
+    }
+
+    .wedo1 .container .wedo-left {
+        order: 2;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .wedo1 .container .wedo-right {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .wedo1 .container .arrow-button {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wedo2 {
+        padding: 5px;
+        text-align: center;
+    }
+    .wedo2 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wedo2 .container img {
+        width: 100%;
+    }
+
+    .wedo2 .container .wedo-left {
+        order: 2;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .wedo2 .container .wedo-right {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .wedo2 .container .arrow-button {
         margin-bottom: 20px;
     }
 }

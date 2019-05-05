@@ -148,4 +148,102 @@ body {
       }
     }
   }
+
+  .process {
+    .steps {
+      display: none;
+    }
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+    h1, p {
+      color: gray;
+    }
+    h1 {
+      text-decoration: underline;
+    }
+    p {
+      font-size: 18px;
+    }
+    .back-process {
+      min-height: 500px;
+      width: auto;
+      background-image: url("../img/process.png");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .wedo1, .wedo2 {
+    padding: 25px;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container {
+      display: flex;
+      justify-content: space-around;
+    }
+    h1, h2, p {
+      color: gray;
+    }
+    p {
+      font-size: 18px;
+      padding-bottom: 15px;
+    }
+    h1 {
+      text-decoration: underline;
+    }
+    h2 {
+      text-transform: uppercase;
+      border-left: 10px solid #fc635e;
+      padding-left: 5px;
+    }
+    .wedo-left {
+      max-width: 50%;
+    }
+    .wedo-right {
+      max-width: 50%;
+    }
+  }
+
+  .wedo2 {
+    background: white;
+    h2 {
+      border-left: none;
+      padding-left: 0;
+      border-right: 10px solid #fc635e;
+      padding-right: 5px;
+    }
+    .wedo-left {
+      order: 2;
+      text-align: right;
+    }
+    .wedo-right {
+      order: 1;
+    }
+  }
+
+  .portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .control {
+
+    }
+    .container-filter {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      div {
+        width: 200px;
+        height: 150px;
+        background: gray;
+        border: 1px solid black;
+      }
+    }
+  }
 }

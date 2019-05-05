@@ -31,6 +31,12 @@ gulp.task('clean', async function () {
         .pipe(clean());
 });
 
+gulp.task('miniCss', function () {
+    return gulp.src('build/css/*.css')
+        .pipe(minify())
+        .pipe(gulp.dest('build/css'));
+});
+
 gulp.task('watcher', function () {
   return watch('source/less/*.less', function () {
     let lessStream = gulp.src(['source/less/*.less'])
@@ -46,7 +52,7 @@ gulp.task('watcher', function () {
   });
 });
 
-gulp.task('build', gulp.series('clean', 'copy'));
+gulp.task('build', gulp.series('clean', 'copy', 'miniCss'));
 
 
 
