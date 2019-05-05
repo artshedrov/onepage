@@ -213,7 +213,7 @@ body .wedo2 {
 }
 body .wedo2 h2 {
   border-left: none;
-  padding-left: 0;
+  padding-left: 0px;
   border-right: 10px solid #fc635e;
   padding-right: 5px;
 }
@@ -228,6 +228,36 @@ body .portfolio {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 30px;
+}
+body .portfolio .main-button {
+  margin: 40px 0px;
+}
+body .portfolio h1 {
+  margin: 50px 0;
+  padding-bottom: 5px;
+  border-bottom: 3px solid gray;
+  color: gray;
+}
+body .portfolio .control {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 25px;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+body .portfolio .control button {
+  color: #fc635e;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+body .portfolio .control button:hover {
+  color: #e44640;
+  cursor: pointer;
 }
 body .portfolio .container-filter {
   width: 100%;
@@ -235,9 +265,46 @@ body .portfolio .container-filter {
   justify-content: center;
   flex-wrap: wrap;
 }
+body .portfolio .container-filter #ex1 {
+  background-image: url("../img/portfolio/1.png");
+}
+body .portfolio .container-filter #ex2 {
+  background-image: url("../img/portfolio/2.png");
+}
+body .portfolio .container-filter #ex3 {
+  background-image: url("../img/portfolio/3.png");
+}
+body .portfolio .container-filter #ex4 {
+  background-image: url("../img/portfolio/4.png");
+}
+body .portfolio .container-filter #ex5 {
+  background-image: url("../img/portfolio/5.png");
+}
+body .portfolio .container-filter #ex6 {
+  background-image: url("../img/portfolio/6.png");
+}
 body .portfolio .container-filter div {
-  width: 200px;
-  height: 150px;
-  background: gray;
-  border: 1px solid black;
+  background-size: cover;
+  background-position: center center;
+  margin: 10px;
+  width: 250px;
+  height: 180px;
+}
+body .portfolio .container-filter div .fill {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  display: none;
+  position: relative;
+  margin: 0px;
+  background: rgba(255, 72, 72, 0.75) url("../img/portfolio/plus.png") no-repeat center;
+}
+body .portfolio .container-filter div .fill p {
+  margin: 0px;
+  padding: 10px;
+}
+body .portfolio .container-filter div:hover .fill {
+  cursor: pointer;
+  display: block;
 }
