@@ -33,24 +33,24 @@ body a.main-button:hover {
 body .main-text {
   text-align: center;
 }
-body .main-text h1 {
+body .main-text h2 {
   text-transform: uppercase;
   font-size: 50px;
   color: white;
 }
-body .main-text h1 span {
+body .main-text h2 span {
   color: #fc635e;
 }
 body .main-text p {
   color: white;
   font-size: 22px;
 }
-body h1.main-header {
+body h2.main-header {
   margin: 0;
   text-transform: uppercase;
   font-size: 40px;
 }
-body h1.main-header span {
+body h2.main-header span {
   color: #fc635e;
 }
 body header {
@@ -112,7 +112,7 @@ body .receive p {
 body .receive-icons {
   display: flex;
 }
-body .receive-icons h3 {
+body .receive-icons h4 {
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -134,7 +134,7 @@ body .expand .main-text {
   margin-bottom: 80px;
   border: 15px solid rgba(0, 0, 0, 0.2);
 }
-body .expand .main-text h1 {
+body .expand .main-text h2 {
   font-size: 50px;
   margin-bottom: 50px;
 }
@@ -146,11 +146,11 @@ body .process {
 body .process .steps {
   display: none;
 }
-body .process h1,
+body .process h2,
 body .process p {
   color: gray;
 }
-body .process h1 {
+body .process h2 {
   text-decoration: underline;
 }
 body .process p {
@@ -177,10 +177,10 @@ body .wedo2 .container {
   display: flex;
   justify-content: space-around;
 }
-body .wedo1 h1,
-body .wedo2 h1,
 body .wedo1 h2,
 body .wedo2 h2,
+body .wedo1 h4,
+body .wedo2 h4,
 body .wedo1 p,
 body .wedo2 p {
   color: gray;
@@ -190,12 +190,12 @@ body .wedo2 p {
   font-size: 18px;
   padding-bottom: 15px;
 }
-body .wedo1 h1,
-body .wedo2 h1 {
-  text-decoration: underline;
-}
 body .wedo1 h2,
 body .wedo2 h2 {
+  text-decoration: underline;
+}
+body .wedo1 h4,
+body .wedo2 h4 {
   text-transform: uppercase;
   border-left: 10px solid #fc635e;
   padding-left: 5px;
@@ -211,7 +211,7 @@ body .wedo2 .wedo-right {
 body .wedo2 {
   background: white;
 }
-body .wedo2 h2 {
+body .wedo2 h4 {
   border-left: none;
   padding-left: 0px;
   border-right: 10px solid #fc635e;
@@ -233,7 +233,7 @@ body .portfolio {
 body .portfolio .main-button {
   margin: 40px 0px;
 }
-body .portfolio h1 {
+body .portfolio h2 {
   margin: 50px 0;
   padding-bottom: 5px;
   border-bottom: 3px solid gray;
@@ -307,4 +307,46 @@ body .portfolio .container-filter div .fill p {
 body .portfolio .container-filter div:hover .fill {
   cursor: pointer;
   display: block;
+}
+body .team {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+body .team .wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+body .team .wrapper .people {
+  text-align: center;
+  margin-bottom: 15px;
+}
+body .team .wrapper a {
+  color: #414141;
+  font-size: 10px;
+}
+body .team .wrapper a:hover {
+  color: #868686;
+}
+body .team .wrapper p {
+  color: gray;
+}
+body .team .wrapper h4 {
+  color: #414141;
+  padding-bottom: 5px;
+}
+body .team .wrapper h4 span {
+  color: #fc635e;
+}
+body .team h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: gray;
+  padding-bottom: 5px;
+}
+body .team h2 span {
+  color: #fc635e;
 }

@@ -1,11 +1,17 @@
-@pink: #fc635e;
+@primary-color: #fc635e;
+@primary-color-dark: #e44640;
+@gray-light: #868686;
+@gray-dark: #414141;
+@gray-text: gray;
+@white-text: white;
+
 
 body {
   a.arrow-button {
     font-size: 30px;
     text-decoration: none;
-    color: #fc635e;
-    border: 1px solid #fc635e;
+    color: @primary-color;
+    border: 1px solid @primary-color;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -13,46 +19,46 @@ body {
     width: 45px;
     height: 45px;
     &:hover{
-      background: #fc635e;
-      color: white;
+      background: @primary-color;
+      color: @white-text;
     }
   }
 
   a.main-button {
-    color: #fc635e;
+    color: @primary-color;
     text-decoration: none;
     font-size: 22px;
-    border: 2px solid #fc635e;
+    border: 2px solid @primary-color;
     padding: 12px 28px;
     border-radius: 8px;
     &:hover {
-      background: #fc635e;
-      color: white;
+      background: @primary-color;
+      color: @white-text;
     }
   }
 
   .main-text {
     text-align: center;
-    h1 {
+    h2 {
       text-transform: uppercase;
       font-size: 50px;
-      color: white;
+      color: @white-text;
       span {
-        color: #fc635e;
+        color: @primary-color;
       }
     }
     p {
-      color: white;
+      color: @white-text;
       font-size: 22px;
     }
   }
 
-  h1.main-header {
+  h2.main-header {
     margin: 0;
     text-transform: uppercase;
     font-size: 40px;
     span {
-      color: #fc635e;
+      color: @primary-color;
     }
   }
 
@@ -72,7 +78,7 @@ body {
       justify-content: space-around;
       align-items: center;
       >a {
-        color: white;
+        color: @white-text;
         font-size: 25px;
         font-weight: bold;
         text-decoration: none;
@@ -91,12 +97,12 @@ body {
         li {
           padding-left: 15px;
           a {
-            color: white;
+            color: @white-text;
             font-size: 20px;
             text-decoration: none;
             &:hover {
-              color: #fc635e;
-              border-bottom: #fc635e solid 3px;
+              color: @primary-color;
+              border-bottom: @primary-color solid 3px;
               padding-bottom: 3px;
             }
           }
@@ -108,9 +114,9 @@ body {
   .receive {
     margin-top: 0;
     text-align: center;
-    background: white;
+    background: @white-text;
     padding: 70px 50px 10px 50px;
-    color: #868686;
+    color: @gray-light;
     p {
       font-size: 22px;
       margin-bottom: 50px;
@@ -119,7 +125,7 @@ body {
 
   .receive-icons {
     display: flex;
-    h3 {
+    h4 {
       text-decoration: underline;
       text-transform: uppercase;
     }
@@ -142,7 +148,7 @@ body {
       padding: 50px;
       margin-bottom: 80px;
       border: 15px solid rgba(0, 0, 0, 0.2);
-      h1 {
+      h2 {
         font-size: 50px;
         margin-bottom: 50px;
       }
@@ -157,10 +163,10 @@ body {
     padding-top: 30px;
     padding-bottom: 15px;
 
-    h1, p {
-      color: gray;
+    h2, p {
+      color: @gray-text;
     }
-    h1 {
+    h2 {
       text-decoration: underline;
     }
     p {
@@ -186,19 +192,19 @@ body {
       display: flex;
       justify-content: space-around;
     }
-    h1, h2, p {
-      color: gray;
+    h2, h4, p {
+      color: @gray-text;
     }
     p {
       font-size: 18px;
       padding-bottom: 15px;
     }
-    h1 {
+    h2 {
       text-decoration: underline;
     }
-    h2 {
+    h4 {
       text-transform: uppercase;
-      border-left: 10px solid #fc635e;
+      border-left: 10px solid @primary-color;
       padding-left: 5px;
     }
     .wedo-left {
@@ -210,11 +216,11 @@ body {
   }
 
   .wedo2 {
-    background: white;
-    h2 {
+    background: @white-text;
+    h4 {
       border-left: none;
       padding-left: 0px;
-      border-right: 10px solid #fc635e;
+      border-right: 10px solid @primary-color;
       padding-right: 5px;
     }
     .wedo-left {
@@ -234,28 +240,28 @@ body {
     .main-button {
       margin: 40px 0px;
     }
-    h1 {
+    h2 {
       margin: 50px 0;
       padding-bottom: 5px;
-      border-bottom: 3px solid gray;
-      color: gray;
+      border-bottom: 3px solid @gray-text;
+      color: @gray-text;
     }
     .control {
       text-align: center;
       letter-spacing: 2px;
       font-size: 25px;
-      border-top: 3px solid gray;
-      border-bottom: 3px solid gray;
+      border-top: 3px solid @gray-text;
+      border-bottom: 3px solid @gray-text;
       padding: 15px;
       margin-bottom: 30px;
       button {
-        color: #fc635e;
+        color: @primary-color;
         background: transparent;
         border: none;
         text-transform: uppercase;
         font-size: 22px;
         &:hover {
-          color: #e44640;
+          color: @primary-color-dark;
           cursor: pointer;
         }
       }
@@ -297,7 +303,7 @@ body {
           }
           font-size: 20px;
           text-transform: uppercase;
-          color: white;
+          color: @white-text;
           font-weight: bold;
           display: none;
           position: relative;
@@ -308,6 +314,49 @@ body {
           cursor: pointer;
           display: block;
         }
+      }
+    }
+  }
+
+  .team {
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 30px;
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+      .people {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      a {
+        color: @gray-dark;
+        font-size: 10px;
+        &:hover {
+          color: @gray-light;
+        }
+      }
+      p {
+        color: gray;
+      }
+      h4 {
+        color: @gray-dark;
+        padding-bottom: 5px;
+        span {
+          color: @primary-color;
+        }
+      }
+    }
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: gray;
+      padding-bottom: 5px;
+      span {
+        color: @primary-color;
       }
     }
   }

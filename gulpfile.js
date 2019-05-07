@@ -9,6 +9,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const clean = require('gulp-contrib-clean');
 const browser = require('browser-sync').create();
+const imageMin = require('gulp-imagemin');
+const html = require('gulp-posthtml');
 
 
 
@@ -37,6 +39,16 @@ gulp.task('miniCss', function () {
         .pipe(gulp.dest('build/css'));
 });
 
+gulp.task('miniPic', function () {
+    return gulp.src('build/img/*.{png,jpg,svg}')
+        .pipe(imageMin([
+            imageMin.optipng({optimizationLevel: 3}),
+            imageMin.jpegtran({progressive: true}),
+            imageMin.svgo()
+        ]))
+        .pipe(gulp.dest('build/img'));
+});
+
 gulp.task('watcher', function () {
   return watch('source/less/*.less', function () {
     let lessStream = gulp.src(['source/less/*.less'])
@@ -52,7 +64,7 @@ gulp.task('watcher', function () {
   });
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'miniCss'));
+gulp.task('build', gulp.series('clean', 'copy', 'miniCss', 'miniPic'));
 
 
 

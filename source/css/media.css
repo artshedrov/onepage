@@ -53,6 +53,10 @@
     body .process .back-process {
         display: none;
     }
+    body .team .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 1260px) {
