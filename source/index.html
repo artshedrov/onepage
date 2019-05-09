@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
     <nav><a href="" class="logo"><img src="img/logo.png" alt="">Daisy</a>
         <menu>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#rec">About</a></li>
+            <li><a href="#prtf">Portfolio</a></li>
+            <li><a href="#pr">Services</a></li>
+            <li><a href="#tm">Contact</a></li>
         </menu>
     </nav>
     <div class="main-text">
@@ -22,10 +23,10 @@
         <p>Your clients on the internet. Learn how to receive them.</p>
         <a class="main-button" href="">I want clients</a>
     </div>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#rec">&darr;</a>
 </header>
-<section class="receive">
-    <h2>What can <span>you receive?</span></h2>
+<section id="rec" class="receive">
+    <h2 class="main-header">What can <span>you receive?</span></h2>
     <p>So perhaps, you've generated some fancy text, and you're content.</p>
     <div class="receive-icons">
         <div><img src="./img/icon1.png" alt="">
@@ -45,16 +46,16 @@
             <p>So perhaps, you've generated some fancy text, and you're content.</p>
         </div>
     </div>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#exp">&darr;</a>
 </section>
-<section class="expand">
+<section id="exp" class="expand">
     <div class="main-text">
         <h2 class="main-header"><span>Expand</span> your business</h2>
         <a class="main-button" href="">Join Us</a>
     </div>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#pr">&darr;</a>
 </section>
-<section class="process">
+<section id="pr" class="process">
     <h2 class="main-header">Our <span>process</span></h2>
     <p>So perhaps, you've generated some fancy text, and you're content.</p>
     <div class="steps">
@@ -74,9 +75,9 @@
         <p>So perhaps, you've generated some fancy text, and you're content.</p>
     </div>
     <div class="back-process"></div>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#wd1">&darr;</a>
 </section>
-<section class="wedo1">
+<section id="wd1" class="wedo1">
     <h2 class="main-header">What do <span>we do?</span></h2>
     <div class="container">
         <div class="wedo-left">
@@ -88,9 +89,9 @@
             <img src="./img/wedo1.png" alt="">
         </div>
     </div>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#wd2">&darr;</a>
 </section>
-<section class="wedo2">
+<section id="wd2" class="wedo2">
     <div class="container">
         <div class="wedo-left">
             <h3>Advertising</h3>
@@ -101,9 +102,9 @@
             <img src="./img/wedo2.png" alt="">
         </div>
     </div>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#wd3">&darr;</a>
 </section>
-<section class="wedo1">
+<section id="wd3" class="wedo1">
     <div class="container">
         <div class="wedo-left">
             <h3>Marketing kit</h3>
@@ -114,9 +115,9 @@
             <img src="./img/wedo3.png" alt="">
         </div>
     </div>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#prtf">&darr;</a>
 </section>
-<section class="portfolio">
+<section id="prtf" class="portfolio">
     <h2 class="main-header">Portfolio</h2>
     <div class="control">
         <button type="button" data-filter="all">All</button> /
@@ -134,9 +135,9 @@
         <div id="ex6" class="mix category-bs"><div class="fill"><p>Business 2</p></div></div>
     </div>
     <a href="" class="main-button">I want landing page</a>
-    <a class="arrow-button" href="">&darr;</a>
+    <a class="arrow-button" href="#tm">&darr;</a>
 </section>
-<section class="team">
+<section id="tm" class="team">
     <h2>Our <span>team</span></h2>
     <div class="wrapper">
         <div class="people">

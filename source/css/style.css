@@ -125,9 +125,6 @@ body .receive-icons div {
 body .expand {
   padding: 100px 100px 15px 100px;
   background: url("../img/expand.png") no-repeat;
-  /*min-height: 450px;
-    max-width: 1250px;
-    width: 100%;*/
 }
 body .expand .main-text {
   padding: 50px;
@@ -146,11 +143,11 @@ body .process {
 body .process .steps {
   display: none;
 }
-body .process h2,
 body .process p {
   color: gray;
 }
 body .process h2 {
+  color: gray;
   text-decoration: underline;
 }
 body .process p {
@@ -167,7 +164,7 @@ body .process .back-process {
 body .wedo1,
 body .wedo2 {
   padding: 25px;
-  background: #f2f2f2;
+  background: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,10 +186,6 @@ body .wedo1 p,
 body .wedo2 p {
   font-size: 18px;
   padding-bottom: 15px;
-}
-body .wedo1 h2,
-body .wedo2 h2 {
-  text-decoration: underline;
 }
 body .wedo1 h4,
 body .wedo2 h4 {
@@ -309,7 +302,7 @@ body .portfolio .container-filter div:hover .fill {
   display: block;
 }
 body .team {
-  background: #f2f2f2;
+  background: #eee;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;

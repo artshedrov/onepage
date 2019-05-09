@@ -4,6 +4,7 @@
 @gray-dark: #414141;
 @gray-text: gray;
 @white-text: white;
+@gray-more-light: #eee;
 
 
 body {
@@ -52,7 +53,6 @@ body {
       font-size: 22px;
     }
   }
-
   h2.main-header {
     margin: 0;
     text-transform: uppercase;
@@ -61,7 +61,6 @@ body {
       color: @primary-color;
     }
   }
-
   margin: 0 auto;
   max-width: 1250px;
 
@@ -141,9 +140,6 @@ body {
   .expand {
     padding: 100px 100px 15px 100px;
     background: url("../img/expand.png") no-repeat;
-    /*min-height: 450px;
-    max-width: 1250px;
-    width: 100%;*/
     .main-text{
       padding: 50px;
       margin-bottom: 80px;
@@ -162,11 +158,11 @@ body {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 15px;
-
-    h2, p {
+    p {
       color: @gray-text;
     }
     h2 {
+      color: @gray-text;
       text-decoration: underline;
     }
     p {
@@ -184,7 +180,7 @@ body {
 
   .wedo1, .wedo2 {
     padding: 25px;
-    background: #f2f2f2;
+    background: @gray-more-light;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,9 +194,6 @@ body {
     p {
       font-size: 18px;
       padding-bottom: 15px;
-    }
-    h2 {
-      text-decoration: underline;
     }
     h4 {
       text-transform: uppercase;
@@ -319,7 +312,7 @@ body {
   }
 
   .team {
-    background: #f2f2f2;
+    background: @gray-more-light;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
